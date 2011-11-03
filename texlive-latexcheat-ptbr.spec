@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/latexcheat/latexcheat-ptbr
+# catalog-date 2009-04-10 11:30:41 +0200
+# catalog-license lppl
+# catalog-version 1.13
 Name:		texlive-latexcheat-ptbr
 Version:	1.13
 Release:	1
@@ -22,6 +28,7 @@ Chang's LaTeX cheat sheet.
 %doc %{_texmfdistdir}/doc/latex/latexcheat-ptbr/README-ptbr
 %doc %{_texmfdistdir}/doc/latex/latexcheat-ptbr/latexsheet-ptbr.pdf
 %doc %{_texmfdistdir}/doc/latex/latexcheat-ptbr/latexsheet-ptbr.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -32,3 +39,5 @@ Chang's LaTeX cheat sheet.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
