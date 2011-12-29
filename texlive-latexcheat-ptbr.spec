@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-ptbr.d
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is a translation to Brazilian Portuguese of Winston
@@ -28,7 +26,6 @@ Chang's LaTeX cheat sheet.
 %doc %{_texmfdistdir}/doc/latex/latexcheat-ptbr/README-ptbr
 %doc %{_texmfdistdir}/doc/latex/latexcheat-ptbr/latexsheet-ptbr.pdf
 %doc %{_texmfdistdir}/doc/latex/latexcheat-ptbr/latexsheet-ptbr.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -39,5 +36,3 @@ Chang's LaTeX cheat sheet.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
