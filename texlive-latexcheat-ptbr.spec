@@ -6,7 +6,7 @@
 # catalog-version 1.13
 Name:		texlive-latexcheat-ptbr
 Version:	1.13
-Release:	9
+Release:	10
 Summary:	A LaTeX cheat sheet, in Brazilian Portuguese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latexcheat/latexcheat-ptbr
