@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	A LaTeX cheat sheet, in Brazilian Portuguese
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/latexcheat/latexcheat-ptbr
+URL:		https://www.ctan.org/tex-archive/info/latexcheat/latexcheat-ptbr
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-ptbr.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-ptbr.doc.r%{version}.tar.xz
